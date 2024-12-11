@@ -1,0 +1,21 @@
+{
+  "name": "module-challenge-10",
+  "version": "1.0.0",
+  "description": "## Description A command-line application to manage a company's employee database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^16.4.7",
+    "inquirer": "^12.2.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
