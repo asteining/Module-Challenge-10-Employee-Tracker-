@@ -3,75 +3,57 @@
 
 # 📝 Description
 1. The Employee Tracker is a command-line interface (CLI) application designed to manage a company's employee database. It allows business owners to view and manage departments, roles, and employees, helping them organize and plan their operations efficiently.
-2. Built using Node.js, TypeScript, Inquirer, and PostgreSQL, this application provides a seamless way to interact with the database through simple prompts in the terminal.
+
 
 # 🚀 Table of Contents
-Installation
-Usage
-Features
-Environment Variables
-Demo Walkthrough
-Dependencies
-License
+1. Installation
+2. Usage
+3. Features
+4. Environment Variables
+5. Demo Walkthrough
+6. Dependencies
+7. License
 
 # 💻 Installation
 1. Clone the Repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/employee-tracker.git
-cd employee-tracker
-Install Dependencies:
+* bash
+* Copy code: git clone https://github.com/yourusername/employee-tracker.git
+* cd employee-tracker
 
-bash
-Copy code
-npm install
-Install TypeScript Globally (if not already installed):
+2. Install Dependencies:
 
-bash
-Copy code
-npm install -g typescript
-Install ts-node (for running TypeScript directly):
+* bash
+* Copy code:
+* npm install -g typescript
+* npm install --save-dev ts-node
 
-bash
-Copy code
-npm install --save-dev ts-node
-Set Up PostgreSQL Database:
+3. Set Up Database Schema and Seed Data:
 
-2. Ensure you have PostgreSQL installed. Create a new database called employeetracker:
+* bash
+* Copy code: 
+* psql -U postgres(enter credntials)
+* once in postgres = \i schema.sql + \i seeds.sql
 
-bash
-Copy code
-createdb employeetracker
-Set Up Database Schema and Seed Data:
+4. Compile TypeScript:
 
-3. Run the following commands to set up the schema and populate the database:
+* bash
+* Copy code: 
+* npx tsc
 
-bash
-Copy code
-psql -U yourusername -d employeetracker -f src/db/schema.sql
-psql -U yourusername -d employeetracker -f src/db/seeds.sql
+5. Run the Application:
 
-▶️ Usage
-Compile TypeScript:
+* bash
+* cd into the "src folder" and copy code: node index.js
 
-bash
-Copy code
-npx tsc
-Run the Application:
+5. Alternatively, you can run the TypeScript file directly with ts-node:
 
-bash
-Copy code
-node dist/index.js
-
-4. Alternatively, you can run the TypeScript file directly with ts-node:
-
-bash: 
+* bash: 
 * Copy code
 * npx ts-node src/index.ts
-* Follow the Prompts:
+* Follow the Prompts
 
-5. The main menu will display the following options:
+6. The main menu will display the following options:
 
 * View All Departments
 * View All Roles
@@ -84,32 +66,27 @@ bash:
 
 
 # ✨ Features
-View All Departments: Displays a formatted table with department names and IDs.
-View All Roles: Shows job titles, role IDs, associated departments, and salaries.
-View All Employees: Displays employee details including names, roles, departments, salaries, and managers.
-Add a Department: Prompts for a department name and adds it to the database.
-Add a Role: Allows adding a new role with a title, salary, and department.
-Add an Employee: Adds a new employee with their name, role, and manager.
-Update Employee Role: Updates an employee's role by selecting a new role.
-Exit: Closes the application.
+* View All Departments: Displays a formatted table with department names and IDs.
+* View All Roles: Shows job titles, role IDs, associated departments, and salaries.
+* View All Employees: Displays employee details including names, roles, departments, salaries, and managers.
+* Add a Department: Prompts for a department name and adds it to the database.
+* Add a Role: Allows adding a new role with a title, salary, and department.
+* Add an Employee: Adds a new employee with their name, role, and manager.
+* Update Employee Role: Updates an employee's role by selecting a new role.
+* Exit: Closes the application.
 
 # 🔐 Environment Variables
-Create a .env file in the root directory with the following variables:
+1. Create a .env file in the root directory with the following variables:
 
-1. 
-Copy code
-DB_HOST=localhost
-DB_USER="yourusername"
-DB_PASSWORD="yourpassword"
+* Copy code
+* DB_HOST=localhost
+* DB_USER="yourusername"
+* DB_PASSWORD="yourpassword"
 
 2. Replace yourusername and yourpassword with your PostgreSQL credentials.
 
 # 🎥 Demo Walkthrough
 Walkthrough Video:
-
-
-
-This video demonstrates the functionality of the Employee Tracker CLI, including all acceptance criteria such as viewing, adding, and updating departments, roles, and employees.
 
 
 # 📦 Dependencies
