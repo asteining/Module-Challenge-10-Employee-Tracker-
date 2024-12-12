@@ -86,7 +86,7 @@
 2. Replace yourusername and yourpassword with your PostgreSQL credentials.
 
 # 🎥 Demo Walkthrough
-Walkthrough Video:
+Walkthrough Video: https://app.screencastify.com/v3/watch/3IqRkYDkTmvru4BCnElV
 
 
 # 📦 Dependencies
